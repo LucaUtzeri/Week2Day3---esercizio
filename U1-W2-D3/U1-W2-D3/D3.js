@@ -110,9 +110,9 @@ const characters = [];
   Dovrai accedere alla proprietà "name" di ogni oggetto in esso contenuto, e inserirla nell'array "characters" creato precedentemente.
   Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO", "R2-D2", etc..]
 */
-for (let i = 0; i > characters.lenght; i++) {
-  const characterName = starWarsCharacters[i];
-  characters.push(characterName.name);
+for (let i = 0; i < characters.lenght; i++) {
+  const characterName = starWarsCharacters.name;
+  characters.push(starWarsCharacters[1].name);
 }
 console.log(characters);
 /* ESERCIZIO 3
@@ -135,10 +135,19 @@ console.log(eyeColor);
   Utilizza uno switch statement per inserire uno ad uno gli oggetti dei personaggi di "starWarsCharacters" negli array relativi al colore degli occhi precedentemente creati.
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
-// switch (starWarsCharacters) {
-//   case starWarsCharacters.eye_color.blue:
-//     eyeColor.push(blue);
-// }
+switch (starWarsCharacters[i].eye_color) {
+  case "blue":
+    eyeColor.blue.push(starWarsCharacters[i]);
+  case "yellow":
+    eyeColor.yellow.push(starWarsCharacters[i]);
+  case "red":
+    eyeColor.red.push(starWarsCharacters[i]);
+  case "brown":
+    eyeColor.brown.push(starWarsCharacters[i]);
+  case "blue-gray":
+    eyeColor["blue-gray"].push(starWarsCharacters[i]);
+}
+console.log(eyeColor);
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
